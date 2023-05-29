@@ -4,15 +4,15 @@ Version:	6.0.0
 Release:	0.20230529.0
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Requires:	task-plasma6-minimal >= %{version}
+Requires:	task-plasma6-minimal = %{EVRD}
 #Requires:	distro-plasma-config
 Requires:	openmandriva-kde-icons
 Requires:	plasma6-bluedevil
 Requires:	plasma6-drkonqi
 # (crazy) FIXME: need -wayland task
 Requires:	plasma6-kwayland-integration
-Requires:	plasma6-kwin-wayland >= %{version}
-Requires:	plasma6-workspace-wayland >= %{version}
+Requires:	plasma6-kwin-wayland
+Requires:	plasma6-workspace-wayland
 Requires:	sddm
 Requires:	plasma6-sddm-kcm
 Requires:	plasma6-sddm-theme-breeze
@@ -35,34 +35,33 @@ Summary:	Minimal dependencies needed for Plasma 6
 Group:		Graphical desktop/KDE
 # Basic
 %if %omvver > 4050000
-Requires:	plasma6-kwin-wayland >= %{version}
-Requires:	plasma6-workspace-wayland >= %{version}
+Requires:	plasma6-kwin-wayland
+Requires:	plasma6-workspace-wayland
 %else
 Requires:	task-x11
-Requires:	plasma6-kwin-x11 >= %{version}
-Requires:	plasma6-workspace-x11 >= %{version}
+Requires:	plasma6-kwin-x11
+Requires:	plasma6-workspace-x11
 %endif
 Requires:	xsettingsd
 Conflicts:	xsettings-kde
 Requires:	plasma6-konsole
 Requires:	plasma6-breeze
-Requires:	plasma6-breeze-icons
+Requires:	kf6-breeze-icons
 Requires:	plasma6-oxygen-sounds
-Requires:	plasma6-frameworkintegration
+Requires:	kf6-frameworkintegration
 Requires:	plasma6-kde-cli-tools
-Requires:	plasma6-kded
-Requires:	plasma6-kdeclarative
+Requires:	kf6-kded
+Requires:	kf6-kdeclarative
 Requires:	plasma6-milou
-Requires:	plasma6-baloo
+Requires:	kf6-baloo
 Requires:	plasma6-pa
 Requires:	plasma6-integration
-Requires:	plasma6-desktop >= %{version}
-Requires:	plasma6-framework
+Requires:	plasma6-desktop
 Requires:	plasma6-vault
 Requires:	plasma6-browser-integration
-Requires:	plasma6-workspace >= %{version}
+Requires:	plasma6-workspace
 Requires:	plasma6-kdeplasma-addons
-Requires:	plasma6-kinfocenter >= 5.8.4
+Requires:	plasma6-kinfocenter
 Requires:	plasma6-kmenuedit
 Requires:	plasma6-kscreen
 Requires:	plasma6-kscreenlocker
@@ -71,8 +70,7 @@ Requires:	plasma6-ksshaskpass
 Requires:	plasma6-kwrited
 Requires:	phonon4qt6-backend
 Requires:	plasma6-nm
-Requires:	plasma6-powerdevil >= 5.8.4
-Requires:	plasma6-systemsettings
+Requires:	plasma6-powerdevil
 Requires:	kf6-solid
 Requires:	plasma6-polkit-kde-agent-1
 Requires:	plasma6-xdg-desktop-portal-kde
@@ -95,19 +93,18 @@ Requires:	libproxy-kde
 Requires:	libproxy-networkmanager
 # Plasma 6
 Requires:	plasma6-breeze
-Requires:	plasma6-breeze-icons
+Requires:	kf6-breeze-icons
 Requires:	plasma6-oxygen-sounds
-Requires:	plasma6-frameworkintegration
+Requires:	kf6-frameworkintegration
 Requires:	plasma6-kde-cli-tools
 Requires:	kf6-kded
 Requires:	kf6-kdeclarative
 Requires:	plasma6-pa
 Requires:	plasma6-integration
-Requires:	plasma6-desktop >= %{version}
-Requires:	plasma6-framework
+Requires:	plasma6-desktop
 Requires:	plasma6-vault
 Requires:	plasma6-browser-integration
-Requires:	plasma6-workspace >= %{version}
+Requires:	plasma6-workspace
 # FIXME This should really be "Requires:", but as of
 # 5.20.4, kscreenlocker on Plasma Mobile fails to unlock
 # even if the password is supplied correctly.
@@ -117,7 +114,7 @@ Requires:	plasma6-workspace >= %{version}
 Requires:	plasma6-ksshaskpass
 Requires:	phonon4qt6-backend
 Requires:	plasma6-nm
-Requires:	plasma6-powerdevil >= 5.8.4
+Requires:	plasma6-powerdevil
 Requires:	kf6-solid
 Requires:	plasma6-polkit-kde-agent-1
 Requires:	plasma6-xdg-desktop-portal-kde
@@ -125,7 +122,7 @@ Requires:	plasma6-milou
 
 # FIXME at some point, we probably want to support plasma-mobile on X11
 # as well...
-Requires:	plasma6-kwin-wayland >= %{version}
+Requires:	plasma6-kwin-wayland
 
 # Key Plasma Mobile specific bits (stuff that is either
 # required or active in the default config)

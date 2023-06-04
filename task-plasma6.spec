@@ -13,7 +13,7 @@ Requires:	plasma6-drkonqi
 Requires:	plasma6-kwayland-integration
 Requires:	plasma6-kwin-wayland
 Requires:	plasma6-workspace-wayland
-Requires:	sddm
+Requires:	plasma6-sddm
 Requires:	plasma6-sddm-kcm
 Requires:	plasma6-sddm-theme-breeze
 Requires:	plasma6-discover

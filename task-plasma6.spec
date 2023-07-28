@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 6
 Name:		task-plasma6
 Version:	6.0.0
-Release:	0.20230529.0
+Release:	0.20230726.0
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma6-minimal = %{EVRD}
@@ -34,14 +34,11 @@ the complete dependencies for running the Plasma 6 desktop.
 Summary:	Minimal dependencies needed for Plasma 6
 Group:		Graphical desktop/KDE
 # Basic
-%if %omvver > 4050000
 Requires:	plasma6-kwin-wayland
 Requires:	plasma6-workspace-wayland
-%else
 Requires:	task-x11
 Requires:	plasma6-kwin-x11
 Requires:	plasma6-workspace-x11
-%endif
 Requires:	xsettingsd
 Conflicts:	xsettings-kde
 Requires:	plasma6-konsole

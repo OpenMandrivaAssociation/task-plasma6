@@ -17,7 +17,7 @@ Requires:	plasma6-sddm
 Requires:	plasma6-sddm-kcm
 Requires:	plasma6-sddm-theme-breeze
 Requires:	plasma6-discover
-Requires:	plasma6-discover-notifier
+#Requires:	plasma6-discover-notifier
 Requires:	plasma6-discover-backend-packagekit
 Requires:	plasma6-kde-gtk-config
 Requires:	plasma6-firewall

@@ -20,9 +20,8 @@ Requires:	plasma6-discover
 #Requires:	plasma6-discover-notifier
 Requires:	plasma6-discover-backend-packagekit
 Requires:	plasma6-kde-gtk-config
-Requires:	plasma6-firewall
+#Requires:	plasma6-firewall
 Requires:	plasma6-systemmonitor
-Suggests:	xscreensaver
 
 %description
 This package is a meta-package, meaning that its purpose is to contain

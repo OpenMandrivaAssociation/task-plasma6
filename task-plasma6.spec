@@ -6,7 +6,7 @@ License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma6-minimal = %{EVRD}
 #Requires:	distro-plasma-config
-Requires:	openmandriva-kde-icons
+#Requires:	openmandriva-kde-icons
 Requires:	plasma6-bluedevil
 Requires:	plasma6-drkonqi
 # (crazy) FIXME: need -wayland task

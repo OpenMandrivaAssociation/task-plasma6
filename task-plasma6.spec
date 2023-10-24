@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 6
 Name:		task-plasma6
 Version:	6.0.0
-Release:	0.20230818.0
+Release:	0.20231024.0
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma6-minimal = %{EVRD}
@@ -9,10 +9,11 @@ Requires:	task-plasma6-minimal = %{EVRD}
 #Requires:	openmandriva-kde-icons
 Requires:	plasma6-bluedevil
 Requires:	plasma6-drkonqi
-# (crazy) FIXME: need -wayland task
-Requires:	plasma6-kwayland-integration
+# (crazy) FIXME: need -wayland and -x11 tasks
+Requires:	kf6-kwindowsystem-backend-wayland
 Requires:	plasma6-kwin-wayland
 Requires:	plasma6-workspace-wayland
+Requires:	kf6-kwindowsystem-backend-x11
 Requires:	plasma6-sddm
 Requires:	plasma6-sddm-kcm
 Requires:	plasma6-sddm-theme-breeze

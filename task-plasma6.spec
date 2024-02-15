@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 6
 Name:		task-plasma6
 Version:	6.0.0
-Release:	0.20231024.0
+Release:	0.20240215.0
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma6-minimal = %{EVRD}
@@ -9,11 +9,6 @@ Requires:	task-plasma6-minimal = %{EVRD}
 #Requires:	openmandriva-kde-icons
 Requires:	plasma6-bluedevil
 Requires:	plasma6-drkonqi
-# (crazy) FIXME: need -wayland and -x11 tasks
-Requires:	kf6-kwindowsystem-backend-wayland
-Requires:	plasma6-kwin-wayland
-Requires:	plasma6-workspace-wayland
-Requires:	kf6-kwindowsystem-backend-x11
 Requires:	plasma6-sddm
 Requires:	plasma6-sddm-kcm
 Requires:	plasma6-sddm-theme-breeze
@@ -30,15 +25,35 @@ the complete dependencies for running the Plasma 6 desktop.
 
 %files
 
+%package x11
+Summary:	X11 window system support for Plasma 6
+Group:		Graphical desktop/KDE
+Requires:	task-x11
+Requires:	plasma6-kwin-x11
+Requires:	plasma6-workspace-x11
+Requires:	kf6-kwindowsystem-backend-x11
+
+%description x11
+X11 window system support for Plasma 6
+
+%files x11
+
+%package wayland
+Summary:	Wayland window system support for Plasma 6
+Group:		Graphical desktop/KDE
+Requires:	plasma6-kwin-wayland
+Requires:	plasma6-workspace-wayland
+Requires:	kf6-kwindowsystem-backend-wayland
+
+%description wayland
+Wayland window system support for Plasma 6
+
+%files wayland
+
 %package minimal
 Summary:	Minimal dependencies needed for Plasma 6
 Group:		Graphical desktop/KDE
 # Basic
-Requires:	plasma6-kwin-wayland
-Requires:	plasma6-workspace-wayland
-Requires:	task-x11
-Requires:	plasma6-kwin-x11
-Requires:	plasma6-workspace-x11
 Requires:	xsettingsd
 Conflicts:	xsettings-kde
 Requires:	plasma6-konsole

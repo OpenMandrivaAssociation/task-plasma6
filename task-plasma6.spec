@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 6
 Name:		task-plasma6
 Version:	6.0.0
-Release:	0.20240215.0
+Release:	0.20240301.0
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma6-minimal = %{EVRD}
@@ -15,7 +15,7 @@ Requires:	plasma6-sddm-theme-breeze
 Requires:	plasma6-discover
 #Requires:	plasma6-discover-notifier
 Requires:	plasma6-discover-backend-packagekit
-Requires:	plasma6-kde-gtk-config
+Requires:	(plasma6-kde-gtk-config if gtk+-3.0)
 #Requires:	plasma6-firewall
 Requires:	plasma6-systemmonitor
 

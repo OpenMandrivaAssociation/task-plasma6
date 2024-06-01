@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 6
 Name:		task-plasma6
 Version:	6.0.0
-Release:	0.20240301.0
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma6-minimal = %{EVRD}
@@ -87,6 +87,7 @@ Requires:	kf6-solid
 Requires:	plasma6-polkit-kde-agent-1
 Requires:	plasma6-xdg-desktop-portal-kde
 Suggests:	task-pulseaudio
+Requires:	distro-release-desktop-Plasma6
 
 %description minimal
 This package is a meta-package, meaning that its purpose is to contain

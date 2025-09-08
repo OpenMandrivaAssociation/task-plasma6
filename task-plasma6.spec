@@ -72,6 +72,7 @@ Requires:	plasma6-desktop
 Requires:	plasma6-vault
 Requires:	plasma6-browser-integration
 Requires:	plasma6-workspace
+Requires:	kcolorchooser
 Requires:	plasma6-kdeplasma-addons
 Requires:	plasma6-kinfocenter
 Requires:	plasma6-kmenuedit

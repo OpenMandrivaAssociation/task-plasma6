@@ -89,6 +89,7 @@ Requires:	plasma6-polkit-kde-agent-1
 Requires:	plasma6-xdg-desktop-portal-kde
 Suggests:	task-pulseaudio
 Requires:	distro-release-desktop-Plasma6
+Requires:	kwin-aurorae
 
 %description minimal
 This package is a meta-package, meaning that its purpose is to contain

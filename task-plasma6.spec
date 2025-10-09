@@ -16,8 +16,8 @@ Requires:	discover
 #Requires:	discover-notifier
 Requires:	discover-backend-packagekit
 Requires:	(kde-gtk-config if gtk+-3.0)
-#Requires:	firewall
-Requires:	systemmonitor
+#Requires:	plasma-firewall
+Requires:	plasma-systemmonitor
 
 %description
 This package is a meta-package, meaning that its purpose is to contain

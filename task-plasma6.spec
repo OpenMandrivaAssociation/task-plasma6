@@ -7,17 +7,17 @@ Group:		Graphical desktop/KDE
 Requires:	task-plasma6-minimal = %{EVRD}
 #Requires:	distro-plasma-config
 #Requires:	openmandriva-kde-icons
-Requires:	plasma6-bluedevil
-Requires:	plasma6-drkonqi
-Requires:	plasma6-sddm
-Requires:	plasma6-sddm-kcm
-Requires:	plasma6-sddm-theme-breeze
-Requires:	plasma6-discover
-#Requires:	plasma6-discover-notifier
-Requires:	plasma6-discover-backend-packagekit
-Requires:	(plasma6-kde-gtk-config if gtk+-3.0)
-#Requires:	plasma6-firewall
-Requires:	plasma6-systemmonitor
+Requires:	bluedevil
+Requires:	drkonqi
+Requires:	sddm
+Requires:	sddm-kcm
+Requires:	sddm-theme-breeze
+Requires:	discover
+#Requires:	discover-notifier
+Requires:	discover-backend-packagekit
+Requires:	(kde-gtk-config if gtk+-3.0)
+#Requires:	firewall
+Requires:	systemmonitor
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
@@ -30,7 +30,7 @@ Summary:	X11 window system support for Plasma 6
 Group:		Graphical desktop/KDE
 Requires:	task-x11
 Requires:	plasma6-kwin-x11
-Requires:	plasma6-workspace-x11
+Requires:	plasma-workspace-x11
 Requires:	kf6-kwindowsystem-backend-x11
 
 %description x11
@@ -42,7 +42,7 @@ X11 window system support for Plasma 6
 Summary:	Wayland window system support for Plasma 6
 Group:		Graphical desktop/KDE
 Requires:	plasma6-kwin-wayland
-Requires:	plasma6-workspace-wayland
+Requires:	plasma-workspace-wayland
 Requires:	kf6-kwindowsystem-backend-wayland
 
 %description wayland
@@ -56,37 +56,37 @@ Group:		Graphical desktop/KDE
 # Basic
 Requires:	xsettingsd
 Conflicts:	xsettings-kde
-Requires:	plasma6-konsole
-Requires:	plasma6-breeze
+Requires:	konsole
+Requires:	breeze
 Requires:	kf6-breeze-icons
-Requires:	plasma6-oxygen-sounds
+Requires:	oxygen-sounds
 Requires:	kf6-frameworkintegration
-Requires:	plasma6-kde-cli-tools
+Requires:	kde-cli-tools
 Requires:	kf6-kded
 Requires:	kf6-kdeclarative
-Requires:	plasma6-milou
+Requires:	milou
 Requires:	kf6-baloo
-Requires:	plasma6-pa
-Requires:	plasma6-integration
-Requires:	plasma6-desktop
-Requires:	plasma6-vault
-Requires:	plasma6-browser-integration
-Requires:	plasma6-workspace
+Requires:	plasma-pa
+Requires:	integration
+Requires:	plasma-desktop
+Requires:	plasma-vault
+Requires:	plasma-browser-integration
+Requires:	plasma-workspace
 Requires:	kcolorchooser
-Requires:	plasma6-kdeplasma-addons
-Requires:	plasma6-kinfocenter
-Requires:	plasma6-kmenuedit
-Requires:	plasma6-kscreen
-Requires:	plasma6-kscreenlocker
+Requires:	kdeplasma-addons
+Requires:	kinfocenter
+Requires:	kmenuedit
+Requires:	kscreen
+Requires:	kscreenlocker
 Requires:	kf6-kservice
-Requires:	plasma6-ksshaskpass
-Requires:	plasma6-kwrited
+Requires:	ksshaskpass
+Requires:	kwrited
 Requires:	phonon4qt6-backend
-Requires:	plasma6-nm
-Requires:	plasma6-powerdevil
+Requires:	plasma-nm
+Requires:	powerdevil
 Requires:	kf6-solid
-Requires:	plasma6-polkit-kde-agent-1
-Requires:	plasma6-xdg-desktop-portal-kde
+Requires:	polkit-kde-agent-1
+Requires:	xdg-desktop-portal-kde
 Suggests:	task-pulseaudio
 Requires:	distro-release-desktop-Plasma6
 Requires:	kwin-aurorae
@@ -107,33 +107,33 @@ Requires:	pinentry-qt5
 Requires:	libproxy-kde
 Requires:	libproxy-networkmanager
 # Plasma 6
-Requires:	plasma6-breeze
+Requires:	breeze
 Requires:	kf6-breeze-icons
-Requires:	plasma6-oxygen-sounds
+Requires:	oxygen-sounds
 Requires:	kf6-frameworkintegration
-Requires:	plasma6-kde-cli-tools
+Requires:	kde-cli-tools
 Requires:	kf6-kded
 Requires:	kf6-kdeclarative
-Requires:	plasma6-pa
-Requires:	plasma6-integration
-Requires:	plasma6-desktop
-Requires:	plasma6-vault
-Requires:	plasma6-browser-integration
-Requires:	plasma6-workspace
+Requires:	plasma-pa
+Requires:	plasma-integration
+Requires:	plasma-desktop
+Requires:	plasma-vault
+Requires:	plasma-browser-integration
+Requires:	plasma-workspace
 # FIXME This should really be "Requires:", but as of
 # 5.20.4, kscreenlocker on Plasma Mobile fails to unlock
 # even if the password is supplied correctly.
 # In the mean time, Plasma Mobile without lock screen is
 # usable, so let's not block further testing on this...
 #Conflicts:	kscreenlocker
-Requires:	plasma6-ksshaskpass
+Requires:	ksshaskpass
 Requires:	phonon4qt6-backend
-Requires:	plasma6-nm
-Requires:	plasma6-powerdevil
+Requires:	plasma-nm
+Requires:	powerdevil
 Requires:	kf6-solid
-Requires:	plasma6-polkit-kde-agent-1
-Requires:	plasma6-xdg-desktop-portal-kde
-Requires:	plasma6-milou
+Requires:	polkit-kde-agent-1
+Requires:	xdg-desktop-portal-kde
+Requires:	milou
 
 # FIXME at some point, we probably want to support plasma-mobile on X11
 # as well...
@@ -141,7 +141,7 @@ Requires:	plasma6-kwin-wayland
 
 # Key Plasma Mobile specific bits (stuff that is either
 # required or active in the default config)
-Requires:	plasma6-mobile
+Requires:	plasma-mobile
 Suggests:	task-pulseaudio
 
 %description mobile-minimal
@@ -157,10 +157,10 @@ Summary:	Packages for Plasma Mobile
 Group:		Graphical desktop/KDE
 # Basic
 Requires:	%{name}-mobile-minimal = %{EVRD}
-Requires:	plasma6-discover
-Requires:	plasma6-discover-backend-packagekit
-Requires:	plasma6-kscreen
-Requires:	plasma6-pa
+Requires:	discover
+Requires:	discover-backend-packagekit
+Requires:	kscreen
+Requires:	plasma-pa
 
 %description mobile
 This package is a meta-package, meaning that its purpose is to contain

@@ -1,7 +1,7 @@
 Summary:	Metapackage for Plasma 6
 Name:		task-plasma6
 Version:	6.0.0
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Requires:	task-plasma6-minimal = %{EVRD}

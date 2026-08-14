@@ -14,7 +14,7 @@ Requires:	sddm-kcm
 Requires:	sddm-theme-breeze
 Requires:	discover
 #Requires:	discover-notifier
-Requires:	discover-backend-packagekit
+Requires:	discover-backend-dnf
 Requires:	(kde-gtk-config if gtk+-3.0)
 #Requires:	plasma-firewall
 Requires:	plasma-systemmonitor
@@ -158,7 +158,7 @@ Group:		Graphical desktop/KDE
 # Basic
 Requires:	%{name}-mobile-minimal = %{EVRD}
 Requires:	discover
-Requires:	discover-backend-packagekit
+Requires:	discover-backend-dnf
 Requires:	kscreen
 Requires:	plasma-pa
 
